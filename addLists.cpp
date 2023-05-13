@@ -1,3 +1,6 @@
+/**
+ * Singly linked list node.
+ */
 struct ListNode {
     int val;
     ListNode *next;
@@ -6,7 +9,10 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-// Despite manual memory management being a bad practice, this exercise forces you to do it.
+/**
+ * Add two numbers represented by singly linked lists.
+ * Despite manual memory management being a bad practice, this exercise forces you to do it.
+ */
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     ListNode *fakeHead = new ListNode(0, new ListNode);
     ListNode *tail = fakeHead;
